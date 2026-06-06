@@ -1,5 +1,9 @@
 import { describe, expect, it } from 'vitest'
-import { buildEpisodes, formatEpisodeDate } from './episodes'
+import {
+  buildEpisodes,
+  formatEpisodeDate,
+  formatNewEpisodeBanner,
+} from './episodes'
 
 describe('buildEpisodes', () => {
   it('sorts by published date and numbers episodes automatically', () => {
@@ -56,6 +60,10 @@ describe('buildEpisodes', () => {
     expect(episode.formattedDate).toBe('June 1, 2026')
   })
 
+  it('formats new episode banner copy from episode title', () => {
+    expect(formatNewEpisodeBanner('Episode II')).toBe('Episode II is now out!')
+  })
+
   it('derives youtube urls and thumbnail paths', () => {
     const [episode] = buildEpisodes([
       {
@@ -66,6 +74,8 @@ describe('buildEpisodes', () => {
     ])
 
     expect(episode.youtubeUrl).toBe('https://www.youtube.com/watch?v=abc123')
-    expect(episode.thumbnail).toBe('/images/episode-1-thumb.jpg')
+    expect(episode.thumbnail).toBe(
+      'https://i.ytimg.com/vi/abc123/maxresdefault.jpg'
+    )
   })
 })

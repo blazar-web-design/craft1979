@@ -18,13 +18,32 @@ export const urls = {
     `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`,
     `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
   ],
+  youtubeThumbnail: (videoId: string) =>
+    `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`,
 }
+
+export const assetDimensions = {
+  logo: { width: 176, height: 176 },
+  heroBackground: { width: 1024, height: 738 },
+  heroPortrait: { width: 960, height: 720 },
+  about: { width: 573, height: 737 },
+  episodeThumb: { width: 1280, height: 720 },
+} as const
 
 export const assets = {
   logo: '/images/channel-avatar.jpg',
+  logoWebp: '/images/channel-avatar-88.webp',
   heroBackground: '/images/hero-forest.png',
+  heroBackgroundWebp: '/images/hero-forest.webp',
   heroPortrait: '/images/hero-portrait.jpg',
+  heroPortraitWebp: '/images/hero-portrait.webp',
+  heroPortraitWebp480: '/images/hero-portrait-480.webp',
+  heroPortraitWebp640: '/images/hero-portrait-640.webp',
   about: '/images/crafting-table.png',
+  aboutWebp: '/images/crafting-table.webp',
+  episodeThumbWebp: (number: number) => `/images/episode-${number}-thumb.webp`,
+  episodeThumbWebp480: (number: number) =>
+    `/images/episode-${number}-thumb-480.webp`,
   og: '/images/og.webp',
   episodeThumb: (number: number) => `/images/episode-${number}-thumb.jpg`,
   favicon32: '/favicon-32.png',
@@ -77,6 +96,12 @@ export const socialLinks: SocialLink[] = [
     label: 'Patreon',
     href: urls.patreon,
     icon: 'patreon',
+  },
+  {
+    id: 'rss',
+    label: 'RSS',
+    href: urls.youtubeFeed(),
+    icon: 'rss',
   },
 ]
 

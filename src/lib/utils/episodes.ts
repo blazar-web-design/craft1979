@@ -1,4 +1,4 @@
-import { assets, urls } from '../config'
+import { urls } from '../config'
 import type { Episode, EpisodeSource } from '../types'
 
 const ROMAN_NUMERALS = [
@@ -39,10 +39,7 @@ export function formatEpisodeDate(isoDate: string) {
   }).format(new Date(Date.UTC(year, month - 1, day)))
 }
 
-export function buildEpisodes(
-  sources: EpisodeSource[],
-  thumbnails: Record<string, string> = {}
-): Episode[] {
+export function buildEpisodes(sources: EpisodeSource[]): Episode[] {
   const sorted = [...sources].sort(
     (a, b) =>
       new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -61,7 +58,7 @@ export function buildEpisodes(
       description: source.description,
       youtubeId: source.youtubeId,
       youtubeUrl: urls.youtubeWatch(source.youtubeId),
-      thumbnail: thumbnails[source.youtubeId] ?? assets.episodeThumb(number),
+      thumbnail: urls.youtubeThumbnail(source.youtubeId),
       publishedAt: source.publishedAt,
       formattedDate: formatEpisodeDate(source.publishedAt),
       isNew: source.youtubeId === latestId,
@@ -71,4 +68,8 @@ export function buildEpisodes(
 
 export function getLatestEpisode(episodeList: Episode[]) {
   return episodeList[0]
+}
+
+export function formatNewEpisodeBanner(title: string) {
+  return `${title} is now out!`
 }

@@ -17,7 +17,7 @@ describe('buildJsonLd', () => {
     )
   })
 
-  it('uses local thumbnails for video objects', () => {
+  it('uses youtube thumbnails for video objects', () => {
     vi.stubEnv('VITE_SITE_URL', 'https://craft1979.test')
 
     const graph = buildJsonLd()
@@ -27,9 +27,7 @@ describe('buildJsonLd', () => {
       const video = videos.find(
         (item) => item.name === `${site.name} ${episode.title}`
       )
-      expect(video?.thumbnailUrl).toBe(
-        `https://craft1979.test${episode.thumbnail}`
-      )
+      expect(video?.thumbnailUrl).toBe(episode.thumbnail)
       expect(video?.embedUrl).toBe(
         `https://www.youtube.com/embed/${episode.youtubeId}`
       )

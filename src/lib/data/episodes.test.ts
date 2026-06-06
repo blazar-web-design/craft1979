@@ -19,7 +19,7 @@ describe('episodes', () => {
       expect(episode.youtubeUrl).toMatch(
         /^https:\/\/www\.youtube\.com\/watch\?v=/
       )
-      expect(episode.thumbnail.startsWith('/images/')).toBe(true)
+      expect(episode.thumbnail).toMatch(/^https:\/\/i\.ytimg\.com\/vi\//)
     }
   })
 })
