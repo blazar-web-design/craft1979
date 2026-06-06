@@ -59,3 +59,8 @@ jobs:
         run: pnpm build
         env:
           VITE_SITE_URL: https://craft1979.example
+
+      - name: Lighthouse
+        run: pnpm test:lighthouse
+        env:
+          VITE_SITE_URL: https://craft1979.example
