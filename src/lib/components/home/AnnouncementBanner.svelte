@@ -1,8 +1,11 @@
 <script lang="ts">
+  import { urls } from '../../config'
   import { episodes } from '../../data/episodes'
-  import { getLatestEpisode } from '../../utils/episodes'
+  import {
+    formatNewEpisodeBanner,
+    getLatestEpisode,
+  } from '../../utils/episodes'
   import Badge from '../ui/Badge.svelte'
-  import Button from '../ui/Button.svelte'
   import Icon from '../ui/Icon.svelte'
 
   const latest = getLatestEpisode(episodes)
@@ -14,56 +17,47 @@
     role="status"
     aria-live="polite"
   >
-    <div class="mx-auto flex max-w-6xl items-stretch">
+    <div class="mx-auto flex max-w-6xl items-center">
       <div class="w-px shrink-0 bg-harvest/50" aria-hidden="true"></div>
 
       <div
-        class="flex flex-1 flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 sm:py-4"
+        class="flex flex-1 items-center gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4"
       >
-        <div class="flex min-w-0 items-center gap-3 sm:gap-4">
-          <span
-            class="font-display text-2xl font-bold leading-none tabular-nums text-fog/15 sm:text-3xl"
-            aria-hidden="true"
+        <div class="min-w-0">
+          <Badge variant="new">New</Badge>
+          <p class="mt-1.5 font-display text-sm tracking-wide text-fog sm:mt-2">
+            {formatNewEpisodeBanner(latest.title)}
+          </p>
+          <time
+            datetime={latest.publishedAt}
+            class="mt-1 block text-xs uppercase tracking-widest text-fog/60"
           >
-            {String(latest.number).padStart(2, '0')}
-          </span>
-
-          <div class="min-w-0">
-            <Badge variant="new">New</Badge>
-            <p
-              class="mt-1.5 font-display text-sm tracking-wide text-fog sm:mt-2"
-            >
-              {latest.title} is now playing
-            </p>
-            <time
-              datetime={latest.publishedAt}
-              class="mt-1 block text-xs uppercase tracking-widest text-fog/40"
-            >
-              {latest.formattedDate}
-            </time>
-          </div>
+            {latest.formattedDate}
+          </time>
         </div>
-
-        <Button
-          href={latest.youtubeUrl}
-          variant="secondary"
-          size="sm"
-          class="w-full shrink-0 sm:w-auto"
-        >
-          <Icon name="play" size={16} />
-          Watch now
-        </Button>
       </div>
 
-      <div
-        class="hidden w-20 shrink-0 border-l border-forest-700 md:block lg:w-24"
+      <a
+        href={latest.youtubeUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Watch {latest.title} on YouTube"
+        class="group/thumb relative hidden aspect-video w-32 shrink-0 overflow-hidden border-l border-forest-700 bg-forest-950 md:block lg:w-40"
       >
         <img
-          src={latest.thumbnail}
+          src={urls.youtubeThumbnail(latest.youtubeId)}
           alt=""
-          class="h-full w-full object-cover vintage-filter opacity-70"
+          width="1280"
+          height="720"
+          decoding="async"
+          class="h-full w-full object-contain object-center transition-opacity duration-200 group-hover/thumb:opacity-50"
         />
-      </div>
+        <span
+          class="pointer-events-none absolute inset-0 flex items-center justify-center bg-forest-950/40 opacity-0 transition-opacity duration-200 group-hover/thumb:opacity-100"
+        >
+          <Icon name="youtube" size={28} class="text-fog" />
+        </span>
+      </a>
     </div>
   </div>
 {/if}
