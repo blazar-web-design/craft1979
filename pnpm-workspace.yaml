@@ -1,5 +1,5 @@
 packages:
-  - "."
+  - '.'
 
 verifyStoreIntegrity: true
 strictPeerDependencies: false
@@ -12,14 +12,14 @@ allowBuilds:
   esbuild: true
 
 overrides:
-  dompurify: ">=3.4.5"
-  lodash: ">=4.17.23"
-  "@isaacs/brace-expansion": ">=5.0.1"
-  "@tootallnate/once": ">=3.0.1"
-  tmp: ">=0.2.4"
-  tar: ">=7.5.7"
-  minimatch: ">=10.2.1"
-  serialize-javascript: ">=7.0.3"
-  flatted: ">=3.4.2"
-  ansi-regex: ">=5.0.1"
-  y18n: ">=4.0.1"
+  dompurify: '>=3.4.5'
+  lodash: '>=4.17.23'
+  '@isaacs/brace-expansion': '>=5.0.1'
+  '@tootallnate/once': '>=3.0.1'
+  tmp: '>=0.2.4'
+  tar: '>=7.5.7'
+  minimatch: '>=10.2.1'
+  serialize-javascript: '>=7.0.3'
+  flatted: '>=3.4.2'
+  ansi-regex: '>=5.0.1'
+  y18n: '>=4.0.1'
