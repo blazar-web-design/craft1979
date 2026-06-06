@@ -2,6 +2,10 @@
 
 Website for [Craft 1979](https://www.youtube.com/watch?v=zX-e9LRR_ko), AI-generated Minecraft episodes by [Latent Diffusion](https://www.youtube.com/@LatentDiffusion).
 
+## AI disclaimer
+
+This is not a vibe coded project. I use AI tooling to help me iterate and design concepts faster to produce high quality. LLMs do not decide dependency versions or handle security related tuning. I use various linting, formatting and tests to validate LLM output.
+
 ## Stack
 
 - Svelte 5
