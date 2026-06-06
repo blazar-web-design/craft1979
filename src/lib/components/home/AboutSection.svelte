@@ -1,21 +1,25 @@
 <script lang="ts">
+  import { assetDimensions, assets } from '../../config'
   import { site } from '../../data/site'
   import CraftGrid from '../ui/CraftGrid.svelte'
   import Section from '../ui/Section.svelte'
 </script>
 
-<Section
-  id="about"
-  title="About"
-  subtitle="What happens when you ask AI to remember Minecraft the way a camera would, not a screen."
->
+<Section id="about" title="About">
   <div class="grid items-center gap-8 md:grid-cols-2 md:gap-10 lg:gap-12">
     <div class="relative">
-      <img
-        src={site.aboutImage}
-        alt="A photorealistic crafting table in a forest"
-        class="w-full vintage-filter shadow-block border-2 border-forest-700"
-      />
+      <picture>
+        <source type="image/webp" srcset={assets.aboutWebp} />
+        <img
+          src={site.aboutImage}
+          alt="A photorealistic crafting table in a forest"
+          width={assetDimensions.about.width}
+          height={assetDimensions.about.height}
+          loading="lazy"
+          decoding="async"
+          class="w-full vintage-filter shadow-block border-2 border-forest-700"
+        />
+      </picture>
       <div
         class="absolute -bottom-4 -right-4 hidden sm:block md:-bottom-6 md:-right-6"
         aria-hidden="true"
@@ -33,7 +37,7 @@
           href={site.channelUrl}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-denim-light hover:text-harvest"
+          class="text-denim-light underline decoration-denim-light/60 underline-offset-2 hover:text-harvest hover:decoration-harvest"
         >
           Latent Diffusion
         </a>

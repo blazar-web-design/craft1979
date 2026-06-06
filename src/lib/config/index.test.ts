@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { assets, channel, urls, youtube } from './index'
+import { assets, channel, socialLinks, urls, youtube } from './index'
 
 describe('config', () => {
   it('defines youtube channel and feed url', () => {
@@ -14,6 +14,12 @@ describe('config', () => {
     expect(urls.youtubeEmbed('abc123')).toBe(
       'https://www.youtube.com/embed/abc123'
     )
+  })
+
+  it('exposes youtube rss in social links', () => {
+    const rss = socialLinks.find((link) => link.id === 'rss')
+    expect(rss?.href).toBe(urls.youtubeFeed(channel.id))
+    expect(rss?.icon).toBe('rss')
   })
 
   it('centralizes asset paths', () => {

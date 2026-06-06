@@ -9,7 +9,7 @@
   >
     <div class="text-center md:text-left">
       <p class="font-display text-sm font-bold text-fog">{site.name}</p>
-      <p class="mt-1 text-xs text-fog/40">
+      <p class="mt-1 text-xs text-fog/60">
         by
         <a
           href={site.channelUrl}
@@ -31,7 +31,7 @@
           class="flex items-center gap-2 text-sm text-fog/50 transition-colors hover:text-harvest"
           aria-label={link.label}
         >
-          <Icon name={link.icon as 'youtube' | 'patreon'} size={18} />
+          <Icon name={link.icon as 'youtube' | 'patreon' | 'rss'} size={18} />
           <span class="hidden sm:inline">{link.label}</span>
         </a>
       {/each}

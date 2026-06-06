@@ -9,6 +9,7 @@
     mdiForest,
     mdiMenu,
     mdiClose,
+    mdiRss,
   } from '@mdi/js'
   import { cn } from '../../utils/cn'
 
@@ -22,6 +23,7 @@
     | 'forest'
     | 'menu'
     | 'close'
+    | 'rss'
 
   let {
     name,
@@ -43,6 +45,7 @@
     forest: mdiForest,
     menu: mdiMenu,
     close: mdiClose,
+    rss: mdiRss,
   }
 </script>
 
