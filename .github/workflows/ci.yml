@@ -1,3 +1,7 @@
+# Pinned actions (bump tag and SHA together when upgrading):
+#   actions/checkout@v4                         34e114876b0b11c390a56381ad16ebd13914f8d5
+#   pnpm/action-setup@v4                        b906affcce14559ad1aafd4ab0e942779e9f58b1
+#   actions/setup-node@v4                       49933ea5288caeca8642d1e84afbd3f7d6820020
 name: CI
 
 on:
@@ -5,25 +9,30 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   quality:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 11
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 22
           cache: pnpm
