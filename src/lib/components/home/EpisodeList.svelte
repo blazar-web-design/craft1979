@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { assets } from '../../config'
   import { episodes } from '../../data/episodes'
   import Badge from '../ui/Badge.svelte'
   import Button from '../ui/Button.svelte'
@@ -15,21 +16,26 @@
           <img
             src={episode.thumbnail}
             alt="{episode.title} thumbnail"
-            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 vintage-filter"
+            width="1280"
+            height="720"
+            loading="lazy"
+            decoding="async"
+            class="h-full w-full object-cover"
           />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-forest-950 via-transparent to-transparent"
-          ></div>
+          <img
+            src={assets.episodeThumbWebp(episode.number)}
+            alt=""
+            aria-hidden="true"
+            width="1280"
+            height="720"
+            decoding="async"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          />
           {#if episode.isNew}
             <div class="absolute left-3 top-3 sm:left-4 sm:top-4">
               <Badge variant="new">New</Badge>
             </div>
           {/if}
-          <div
-            class="absolute bottom-3 left-3 font-display text-3xl font-bold text-fog/20 sm:bottom-4 sm:left-4 sm:text-4xl"
-          >
-            {String(episode.number).padStart(2, '0')}
-          </div>
         </div>
 
         <div class="p-4 sm:p-6">
@@ -39,7 +45,7 @@
             </h3>
             <time
               datetime={episode.publishedAt}
-              class="text-xs uppercase tracking-widest text-fog/40"
+              class="text-xs uppercase tracking-widest text-fog/60"
             >
               {episode.formattedDate}
             </time>
