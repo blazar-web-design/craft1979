@@ -50,6 +50,12 @@ describe('youtube-feed', () => {
     )
   })
 
+  it('decodes xml entities without double-unescaping', () => {
+    expect(summarizeDescription('Tom &amp; Jerry')).toBe('Tom & Jerry')
+    expect(summarizeDescription('&quot;Hello&quot;')).toBe('"Hello"')
+    expect(summarizeDescription('&amp;quot;')).toBe('&quot;')
+  })
+
   it('maps feed entries to episode sources with overrides', () => {
     const [source] = toEpisodeSources(
       filterCraftEpisodes(parseYoutubeFeed(sampleFeed)),

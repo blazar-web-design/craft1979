@@ -28,11 +28,16 @@ function readThumbnail(block: string) {
   return match?.[1] ?? ''
 }
 
+function decodeXmlEntities(text: string) {
+  let decoded = text
+  decoded = decoded.split('&quot;').join('"')
+  decoded = decoded.split('&#39;').join("'")
+  decoded = decoded.split('&apos;').join("'")
+  return decoded.split('&amp;').join('&')
+}
+
 export function summarizeDescription(text: string) {
-  const line = text
-    .replace(/&quot;/g, '"')
-    .replace(/&amp;/g, '&')
-    .replace(/&#39;/g, "'")
+  const line = decodeXmlEntities(text)
     .split('\n')
     .map((part) => part.trim())
     .find(Boolean)
