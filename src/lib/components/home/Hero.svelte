@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { assetDimensions, assets } from '../../config'
   import { episodes } from '../../data/episodes'
   import { site } from '../../data/site'
   import { getLatestEpisode } from '../../utils/episodes'
@@ -6,16 +7,18 @@
   import CraftGrid from '../ui/CraftGrid.svelte'
   import Icon from '../ui/Icon.svelte'
 
+  const heroBackgroundStyle = `background-image: image-set(url('${assets.heroBackgroundWebp}') type('image/webp'), url('${site.heroBackground}') type('image/png'))`
   const latest = getLatestEpisode(episodes)
 </script>
 
 <section class="relative overflow-hidden">
   <div class="absolute inset-0">
-    <img
-      src={site.heroBackground}
-      alt=""
-      class="h-full w-full object-cover opacity-40 vintage-filter"
-    />
+    <div
+      class="h-full w-full bg-cover bg-center opacity-40 vintage-filter"
+      style={heroBackgroundStyle}
+      role="presentation"
+      aria-hidden="true"
+    ></div>
     <div
       class="absolute inset-0 bg-gradient-to-b from-forest-950/60 via-forest-950/80 to-forest-950"
     ></div>
@@ -69,11 +72,22 @@
         <CraftGrid size="md" class="md:hidden" />
         <CraftGrid size="lg" class="hidden md:block" />
       </div>
-      <img
-        src={site.heroPortrait}
-        alt="A frame from Craft 1979 Episode I"
-        class="relative z-10 w-full vintage-filter shadow-block border-2 border-forest-700"
-      />
+      <picture>
+        <source
+          type="image/webp"
+          srcset="{assets.heroPortraitWebp480} 480w, {assets.heroPortraitWebp640} 640w, {assets.heroPortraitWebp} 960w"
+          sizes="(max-width: 768px) 100vw, 448px"
+        />
+        <img
+          src={site.heroPortrait}
+          alt="A frame from Craft 1979 Episode I"
+          width={assetDimensions.heroPortrait.width}
+          height={assetDimensions.heroPortrait.height}
+          fetchpriority="high"
+          decoding="async"
+          class="relative z-10 w-full vintage-filter shadow-block border-2 border-forest-700"
+        />
+      </picture>
     </div>
   </div>
 </section>

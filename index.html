@@ -19,6 +19,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/images/hero-portrait-480.webp"
+      imagesrcset="/images/hero-portrait-480.webp 480w, /images/hero-portrait-640.webp 640w, /images/hero-portrait.webp 960w"
+      imagesizes="(max-width: 768px) 100vw, 448px"
+      fetchpriority="high"
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Craft 1979" />

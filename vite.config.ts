@@ -17,7 +17,17 @@ function seoPlugin(): Plugin {
   return {
     name: 'craft1979-seo',
     transformIndexHtml(html) {
-      return html.replaceAll('__SITE_URL__', resolveSiteUrl())
+      const siteUrl = resolveSiteUrl()
+      return html
+        .replaceAll('__SITE_URL__', siteUrl)
+        .replace(
+          /<link rel="stylesheet" crossorigin href="([^"]+)">/,
+          '<link rel="preload" as="style" href="$1" onload="this.onload=null;this.rel=\'stylesheet\'"><noscript><link rel="stylesheet" href="$1"></noscript>'
+        )
+        .replace(
+          /<script type="module" crossorigin src="([^"]+)"><\/script>/,
+          '<link rel="modulepreload" crossorigin href="$1"><script type="module" crossorigin src="$1"></script>'
+        )
     },
     closeBundle() {
       const siteUrl = resolveSiteUrl()
