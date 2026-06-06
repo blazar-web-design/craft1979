@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { absoluteUrl, seo } from './config'
+import { absoluteUrl, buildSocialDescription, seo } from './config'
 
 describe('seo config', () => {
   it('uses a local open graph image', () => {
@@ -14,5 +14,9 @@ describe('seo config', () => {
     )
 
     vi.unstubAllEnvs()
+  })
+
+  it('builds social copy from the latest episode', () => {
+    expect(buildSocialDescription()).toContain('Episode II is out now.')
   })
 })

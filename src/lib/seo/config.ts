@@ -1,4 +1,4 @@
-import { seo as seoConfig } from '../config'
+import { seo as seoConfig, site } from '../config'
 import { episodes } from '../data/episodes'
 
 export const seo = seoConfig
@@ -19,4 +19,12 @@ export function absoluteUrl(path: string) {
 
 export function getPrimaryEpisode() {
   return episodes.find((episode) => episode.isNew) ?? episodes[0]
+}
+
+export function buildSocialDescription() {
+  const latest = getPrimaryEpisode()
+  if (latest) {
+    return `${site.description} ${latest.title} is out now.`
+  }
+  return seo.description
 }

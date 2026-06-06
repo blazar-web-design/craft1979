@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vitest'
 import { episodes } from '../data/episodes'
 import { site } from '../data/site'
+import { absoluteUrl } from './config'
 import { buildJsonLd } from './jsonld'
 
 describe('buildJsonLd', () => {
@@ -17,7 +18,7 @@ describe('buildJsonLd', () => {
     )
   })
 
-  it('uses youtube thumbnails for video objects', () => {
+  it('uses episode thumbnails for video objects', () => {
     vi.stubEnv('VITE_SITE_URL', 'https://craft1979.test')
 
     const graph = buildJsonLd()
@@ -27,7 +28,7 @@ describe('buildJsonLd', () => {
       const video = videos.find(
         (item) => item.name === `${site.name} ${episode.title}`
       )
-      expect(video?.thumbnailUrl).toBe(episode.thumbnail)
+      expect(video?.thumbnailUrl).toBe(absoluteUrl(episode.thumbnail))
       expect(video?.embedUrl).toBe(
         `https://www.youtube.com/embed/${episode.youtubeId}`
       )

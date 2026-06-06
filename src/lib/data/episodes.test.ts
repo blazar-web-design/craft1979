@@ -19,7 +19,12 @@ describe('episodes', () => {
       expect(episode.youtubeUrl).toMatch(
         /^https:\/\/www\.youtube\.com\/watch\?v=/
       )
-      expect(episode.thumbnail).toMatch(/^https:\/\/i\.ytimg\.com\/vi\//)
+    }
+  })
+
+  it('uses synced local thumbnails when available', () => {
+    for (const episode of episodes) {
+      expect(episode.thumbnail).toMatch(/^\/images\/episode-\d+-thumb\.jpg$/)
     }
   })
 })

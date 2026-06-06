@@ -1,6 +1,7 @@
 <script lang="ts">
   import { assetDimensions, assets } from '../../config'
   import { site } from '../../data/site'
+  import { assetPath } from '../../utils/asset-path'
   import CraftGrid from '../ui/CraftGrid.svelte'
   import Section from '../ui/Section.svelte'
 </script>
@@ -9,9 +10,9 @@
   <div class="grid items-center gap-8 md:grid-cols-2 md:gap-10 lg:gap-12">
     <div class="relative">
       <picture>
-        <source type="image/webp" srcset={assets.aboutWebp} />
+        <source type="image/webp" srcset={assetPath(assets.aboutWebp)} />
         <img
-          src={site.aboutImage}
+          src={assetPath(site.aboutImage)}
           alt="A photorealistic crafting table in a forest"
           width={assetDimensions.about.width}
           height={assetDimensions.about.height}

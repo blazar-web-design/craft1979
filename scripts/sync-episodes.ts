@@ -1,7 +1,12 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { assets, episodeDescriptions, urls, youtube } from '../src/lib/config'
+import { episodeDescriptions, youtube } from '../src/lib/config'
+import {
+  episodeThumbnailAsset,
+  episodeThumbnailFilename,
+  fetchFirstThumbnail,
+} from '../src/lib/utils/sync-thumbnails'
 import {
   filterCraftEpisodes,
   parseYoutubeFeed,
@@ -16,19 +21,13 @@ const generatedPath = path.join(
 const imagesDir = path.join(rootDir, 'public/images')
 
 async function downloadThumbnail(youtubeId: string, number: number) {
-  for (const url of urls.youtubeThumbnailCandidates(youtubeId)) {
-    const response = await fetch(url)
-    if (!response.ok) continue
-
-    const buffer = Buffer.from(await response.arrayBuffer())
-    if (buffer.length < 1000) continue
-
-    const target = path.join(imagesDir, `episode-${number}-thumb.jpg`)
+  const buffer = await fetchFirstThumbnail(youtubeId)
+  if (buffer) {
+    const target = path.join(imagesDir, episodeThumbnailFilename(number))
     await fs.writeFile(target, buffer)
-    return assets.episodeThumb(number)
   }
 
-  return assets.episodeThumb(number)
+  return episodeThumbnailAsset(number)
 }
 
 async function main() {

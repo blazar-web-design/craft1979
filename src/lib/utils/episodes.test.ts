@@ -3,6 +3,7 @@ import {
   buildEpisodes,
   formatEpisodeDate,
   formatNewEpisodeBanner,
+  toRomanNumeral,
 } from './episodes'
 
 describe('buildEpisodes', () => {
@@ -64,7 +65,7 @@ describe('buildEpisodes', () => {
     expect(formatNewEpisodeBanner('Episode II')).toBe('Episode II is now out!')
   })
 
-  it('derives youtube urls and thumbnail paths', () => {
+  it('derives youtube urls and falls back to youtube thumbnails', () => {
     const [episode] = buildEpisodes([
       {
         youtubeId: 'abc123',
@@ -77,5 +78,35 @@ describe('buildEpisodes', () => {
     expect(episode.thumbnail).toBe(
       'https://i.ytimg.com/vi/abc123/maxresdefault.jpg'
     )
+  })
+
+  it('prefers synced local thumbnails when available', () => {
+    const [episode] = buildEpisodes(
+      [
+        {
+          youtubeId: 'abc123',
+          publishedAt: '2026-06-01',
+          description: 'Test',
+        },
+      ],
+      { abc123: '/images/episode-1-thumb.jpg' }
+    )
+
+    expect(episode.thumbnail).toBe('/images/episode-1-thumb.jpg')
+  })
+})
+
+describe('toRomanNumeral', () => {
+  it('formats values up to XX', () => {
+    expect(toRomanNumeral(1)).toBe('I')
+    expect(toRomanNumeral(4)).toBe('IV')
+    expect(toRomanNumeral(9)).toBe('IX')
+    expect(toRomanNumeral(20)).toBe('XX')
+  })
+
+  it('falls back to decimal values above XX', () => {
+    expect(toRomanNumeral(0)).toBe('')
+    expect(toRomanNumeral(21)).toBe('21')
+    expect(toRomanNumeral(25)).toBe('25')
   })
 })

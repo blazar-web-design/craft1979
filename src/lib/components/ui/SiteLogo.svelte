@@ -1,6 +1,7 @@
 <script lang="ts">
   import { assetDimensions, assets } from '../../config'
   import { site } from '../../data/site'
+  import { assetPath } from '../../utils/asset-path'
   import { cn } from '../../utils/cn'
 
   let {
@@ -18,9 +19,9 @@
 </script>
 
 <picture>
-  <source type="image/webp" srcset={assets.logoWebp} />
+  <source type="image/webp" srcset={assetPath(assets.logoWebp)} />
   <img
-    src={site.logo}
+    src={assetPath(site.logo)}
     alt=""
     width={assetDimensions.logo.width}
     height={assetDimensions.logo.height}

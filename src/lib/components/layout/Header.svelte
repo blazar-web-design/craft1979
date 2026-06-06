@@ -1,5 +1,6 @@
 <script lang="ts">
   import { navLinks, site } from '../../data/site'
+  import { siteRoot } from '../../utils/asset-path'
   import Icon from '../ui/Icon.svelte'
   import SiteLogo from '../ui/SiteLogo.svelte'
 
@@ -16,7 +17,11 @@
   <div
     class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4"
   >
-    <a href="/" class="group flex items-center gap-3" onclick={closeMenu}>
+    <a
+      href={siteRoot()}
+      class="group flex items-center gap-3"
+      onclick={closeMenu}
+    >
       <SiteLogo class="opacity-90 transition-opacity group-hover:opacity-100" />
       <span class="font-display text-lg font-bold tracking-tight text-fog">
         {site.name}

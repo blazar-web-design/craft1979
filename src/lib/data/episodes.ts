@@ -1,4 +1,4 @@
 import { buildEpisodes } from '../utils/episodes'
-import { episodeSources } from './episode-sources'
+import { episodeSources, episodeThumbnails } from './episode-sources'
 
-export const episodes = buildEpisodes(episodeSources)
+export const episodes = buildEpisodes(episodeSources, episodeThumbnails)

@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { applyJsonLd } from '../../seo/document'
+  import { applyJsonLd, applyPageMeta } from '../../seo/document'
 
   $effect(() => {
+    applyPageMeta()
     applyJsonLd()
   })
 </script>

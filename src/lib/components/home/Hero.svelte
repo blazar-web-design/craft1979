@@ -2,12 +2,13 @@
   import { assetDimensions, assets } from '../../config'
   import { episodes } from '../../data/episodes'
   import { site } from '../../data/site'
+  import { assetPath } from '../../utils/asset-path'
   import { getLatestEpisode } from '../../utils/episodes'
   import Button from '../ui/Button.svelte'
   import CraftGrid from '../ui/CraftGrid.svelte'
   import Icon from '../ui/Icon.svelte'
 
-  const heroBackgroundStyle = `background-image: image-set(url('${assets.heroBackgroundWebp}') type('image/webp'), url('${site.heroBackground}') type('image/png'))`
+  const heroBackgroundStyle = `background-image: image-set(url('${assetPath(assets.heroBackgroundWebp)}') type('image/webp'), url('${assetPath(site.heroBackground)}') type('image/png'))`
   const latest = getLatestEpisode(episodes)
 </script>
 
@@ -75,11 +76,13 @@
       <picture>
         <source
           type="image/webp"
-          srcset="{assets.heroPortraitWebp480} 480w, {assets.heroPortraitWebp640} 640w, {assets.heroPortraitWebp} 960w"
+          srcset="{assetPath(assets.heroPortraitWebp480)} 480w, {assetPath(
+            assets.heroPortraitWebp640
+          )} 640w, {assetPath(assets.heroPortraitWebp)} 960w"
           sizes="(max-width: 768px) 100vw, 448px"
         />
         <img
-          src={site.heroPortrait}
+          src={assetPath(site.heroPortrait)}
           alt="A frame from Craft 1979 Episode I"
           width={assetDimensions.heroPortrait.width}
           height={assetDimensions.heroPortrait.height}

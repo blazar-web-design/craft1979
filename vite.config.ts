@@ -6,11 +6,18 @@ import { defineConfig } from 'vitest/config'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import tailwindcss from '@tailwindcss/vite'
 import { playwright } from '@vitest/browser-playwright'
+import { buildRobotsTxt, buildSitemapXml } from './src/lib/seo/bundle'
 
 const rootDir = path.dirname(fileURLToPath(import.meta.url))
 
 function resolveSiteUrl() {
   return process.env.VITE_SITE_URL?.replace(/\/$/, '') ?? ''
+}
+
+function resolveBase() {
+  const configured = process.env.BASE_PATH
+  if (!configured || configured === '/') return '/'
+  return configured.endsWith('/') ? configured : `${configured}/`
 }
 
 function seoPlugin(): Plugin {
@@ -32,29 +39,24 @@ function seoPlugin(): Plugin {
     closeBundle() {
       const siteUrl = resolveSiteUrl()
       const distDir = path.resolve(rootDir, 'dist')
-      const robots = siteUrl
-        ? `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`
-        : `User-agent: *\nAllow: /\n`
 
-      fs.writeFileSync(path.join(distDir, 'robots.txt'), robots)
+      fs.writeFileSync(
+        path.join(distDir, 'robots.txt'),
+        buildRobotsTxt(siteUrl)
+      )
 
       if (!siteUrl) return
 
-      const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${siteUrl}/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-</urlset>
-`
-      fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemap)
+      fs.writeFileSync(
+        path.join(distDir, 'sitemap.xml'),
+        buildSitemapXml(siteUrl)
+      )
     },
   }
 }
 
 export default defineConfig({
+  base: resolveBase(),
   plugins: [tailwindcss(), svelte(), seoPlugin()],
   test: {
     projects: [

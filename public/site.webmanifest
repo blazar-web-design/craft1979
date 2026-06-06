@@ -2,20 +2,20 @@
   "name": "Craft 1979",
   "short_name": "Craft 1979",
   "description": "AI-generated Minecraft episodes reimagined as gritty 1970s cinema.",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#0f1810",
   "theme_color": "#1a2e1a",
   "lang": "en",
   "icons": [
     {
-      "src": "/favicon-32.png",
+      "src": "favicon-32.png",
       "sizes": "32x32",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-192.png",
+      "src": "favicon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"

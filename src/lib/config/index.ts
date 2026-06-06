@@ -106,7 +106,7 @@ export const socialLinks: SocialLink[] = [
 ]
 
 export const seo = {
-  title: `${site.name} | AI Minecraft Cinema`,
+  title: site.name,
   description: `${site.description} Watch episodes from ${channel.displayName} on YouTube.`,
   keywords: [
     'Craft 1979',

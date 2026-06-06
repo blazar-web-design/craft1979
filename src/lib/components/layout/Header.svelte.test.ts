@@ -30,4 +30,22 @@ describe('Header', () => {
       .element(screen.getByRole('link', { name: 'Support' }))
       .toBeInTheDocument()
   })
+
+  it('toggles the mobile navigation menu', async () => {
+    const screen = await render(Header)
+
+    await screen.getByRole('button', { name: 'Open menu' }).click()
+
+    const closeToggle = screen.getByRole('button', { name: 'Close menu' })
+    await expect.element(closeToggle).toHaveAttribute('aria-expanded', 'true')
+    await expect
+      .element(screen.getByRole('navigation', { name: 'Mobile' }))
+      .toBeInTheDocument()
+
+    await closeToggle.click()
+
+    await expect
+      .element(screen.getByRole('button', { name: 'Open menu' }))
+      .toHaveAttribute('aria-expanded', 'false')
+  })
 })

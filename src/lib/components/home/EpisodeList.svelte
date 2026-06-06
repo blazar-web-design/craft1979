@@ -1,6 +1,7 @@
 <script lang="ts">
   import { assets } from '../../config'
   import { episodes } from '../../data/episodes'
+  import { assetPath } from '../../utils/asset-path'
   import Badge from '../ui/Badge.svelte'
   import Button from '../ui/Button.svelte'
   import Card from '../ui/Card.svelte'
@@ -14,7 +15,7 @@
       <Card class="group overflow-hidden">
         <div class="relative aspect-video overflow-hidden">
           <img
-            src={episode.thumbnail}
+            src={assetPath(episode.thumbnail)}
             alt="{episode.title} thumbnail"
             width="1280"
             height="720"
@@ -23,7 +24,7 @@
             class="h-full w-full object-cover"
           />
           <img
-            src={assets.episodeThumbWebp(episode.number)}
+            src={assetPath(assets.episodeThumbWebp(episode.number))}
             alt=""
             aria-hidden="true"
             width="1280"

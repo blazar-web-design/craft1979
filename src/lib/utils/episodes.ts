@@ -39,7 +39,10 @@ export function formatEpisodeDate(isoDate: string) {
   }).format(new Date(Date.UTC(year, month - 1, day)))
 }
 
-export function buildEpisodes(sources: EpisodeSource[]): Episode[] {
+export function buildEpisodes(
+  sources: EpisodeSource[],
+  thumbnails: Record<string, string> = {}
+): Episode[] {
   const sorted = [...sources].sort(
     (a, b) =>
       new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -58,7 +61,8 @@ export function buildEpisodes(sources: EpisodeSource[]): Episode[] {
       description: source.description,
       youtubeId: source.youtubeId,
       youtubeUrl: urls.youtubeWatch(source.youtubeId),
-      thumbnail: urls.youtubeThumbnail(source.youtubeId),
+      thumbnail:
+        thumbnails[source.youtubeId] ?? urls.youtubeThumbnail(source.youtubeId),
       publishedAt: source.publishedAt,
       formattedDate: formatEpisodeDate(source.publishedAt),
       isNew: source.youtubeId === latestId,
