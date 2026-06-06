@@ -4,7 +4,7 @@ Website for [Craft 1979](https://www.youtube.com/watch?v=zX-e9LRR_ko), AI-genera
 
 ## AI disclaimer
 
-This is not a vibe coded project. I use AI tooling to help me iterate and design concepts faster to produce high quality. LLMs do not decide dependency versions or handle security related tuning. I use various linting, formatting and tests to validate LLM output.
+This is not a vibe-coded project. I use AI tooling to iterate on design and implementation faster, but I review and own the output. LLMs do not choose dependency versions or security policy. Linting, formatting, and tests verify AI-generated code before it lands.
 
 ## Stack
 
