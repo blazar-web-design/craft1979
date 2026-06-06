@@ -2,6 +2,10 @@
 
 Website for [Craft 1979](https://www.youtube.com/watch?v=zX-e9LRR_ko), AI-generated Minecraft episodes by [Latent Diffusion](https://www.youtube.com/@LatentDiffusion).
 
+<p align="center">
+  <img src="showcase/showcase.png" alt="Craft 1979 website homepage" width="600" />
+</p>
+
 ## AI disclaimer
 
 This is not a vibe-coded project. I use AI tooling to iterate on design and implementation faster, but I review and own the output. LLMs do not choose dependency versions or security policy. Linting, formatting, and tests verify AI-generated code before it lands.
