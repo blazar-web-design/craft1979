@@ -1,0 +1,51 @@
+{
+  "name": "craft1979",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "sync:episodes": "tsx scripts/sync-episodes.ts",
+    "prebuild": "pnpm sync:episodes"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource/source-sans-3": "^5.2.9",
+    "@mdi/js": "^7.4.47",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "@tailwindcss/vite": "^4.3.0",
+    "@tsconfig/svelte": "^5.0.8",
+    "@types/node": "^24.12.3",
+    "@vitest/browser-playwright": "^4.1.8",
+    "eslint": "^10.4.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-svelte": "^3.19.0",
+    "globals": "^17.6.0",
+    "playwright": "^1.60.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-svelte": "^3.4.0",
+    "svelte": "^5.55.5",
+    "svelte-check": "^4.4.8",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.60.1",
+    "vite": "^8.0.12",
+    "vitest": "^4.1.8",
+    "vitest-browser-svelte": "^2.1.1"
+  }
+}

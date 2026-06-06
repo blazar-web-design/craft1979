@@ -1,0 +1,19 @@
+{
+  "syncedAt": "2026-06-06T17:21:33.711Z",
+  "sources": [
+    {
+      "youtubeId": "Ua2D-PM97xc",
+      "publishedAt": "2026-06-06",
+      "description": "The forest deepens. Steve faces what the blocks were always hiding beneath the leaves."
+    },
+    {
+      "youtubeId": "zX-e9LRR_ko",
+      "publishedAt": "2026-06-01",
+      "description": "Where it began. A lone figure in denim walks through trees that feel too real to be rendered."
+    }
+  ],
+  "thumbnails": {
+    "Ua2D-PM97xc": "/images/episode-2-thumb.jpg",
+    "zX-e9LRR_ko": "/images/episode-1-thumb.jpg"
+  }
+}

@@ -1,0 +1,40 @@
+<script lang="ts">
+  import { site, socialLinks } from '../../data/site'
+  import Icon from '../ui/Icon.svelte'
+</script>
+
+<footer class="border-t-2 border-forest-800 bg-forest-950">
+  <div
+    class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 py-10 sm:px-6 md:flex-row"
+  >
+    <div class="text-center md:text-left">
+      <p class="font-display text-sm font-bold text-fog">{site.name}</p>
+      <p class="mt-1 text-xs text-fog/40">
+        by
+        <a
+          href={site.channelUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-fog/60 transition-colors hover:text-harvest"
+        >
+          Latent Diffusion
+        </a>
+      </p>
+    </div>
+
+    <div class="flex items-center gap-4">
+      {#each socialLinks as link (link.id)}
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 text-sm text-fog/50 transition-colors hover:text-harvest"
+          aria-label={link.label}
+        >
+          <Icon name={link.icon as 'youtube' | 'patreon'} size={18} />
+          <span class="hidden sm:inline">{link.label}</span>
+        </a>
+      {/each}
+    </div>
+  </div>
+</footer>
