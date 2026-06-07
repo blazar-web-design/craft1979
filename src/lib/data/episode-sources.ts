@@ -17,7 +17,3 @@ const fallbackSources: EpisodeSource[] = [
 
 export const episodeSources: EpisodeSource[] =
   generated.sources.length > 0 ? generated.sources : fallbackSources
-
-export const episodeThumbnails: Record<string, string> = generated.thumbnails
-
-export const episodesSyncedAt: string | null = generated.syncedAt

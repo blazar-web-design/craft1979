@@ -3,10 +3,7 @@
     mdiYoutube,
     mdiPatreon,
     mdiPlay,
-    mdiArrowTopRight,
-    mdiGrid,
     mdiFilmstrip,
-    mdiForest,
     mdiMenu,
     mdiClose,
     mdiRss,
@@ -17,10 +14,7 @@
     | 'youtube'
     | 'patreon'
     | 'play'
-    | 'external'
-    | 'grid'
     | 'film'
-    | 'forest'
     | 'menu'
     | 'close'
     | 'rss'
@@ -39,10 +33,7 @@
     youtube: mdiYoutube,
     patreon: mdiPatreon,
     play: mdiPlay,
-    external: mdiArrowTopRight,
-    grid: mdiGrid,
     film: mdiFilmstrip,
-    forest: mdiForest,
     menu: mdiMenu,
     close: mdiClose,
     rss: mdiRss,

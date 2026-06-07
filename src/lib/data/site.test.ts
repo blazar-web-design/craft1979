@@ -4,7 +4,7 @@ import { navLinks, site, socialLinks } from './site'
 describe('site', () => {
   it('defines core metadata', () => {
     expect(site.name).toBe('Craft 1979')
-    expect(site.year).toBe(1979)
+    expect(site.tagline).toContain('1979')
   })
 
   it('links to latent diffusion channels', () => {
