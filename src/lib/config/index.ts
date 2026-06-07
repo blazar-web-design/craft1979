@@ -2,7 +2,6 @@ import type { NavLink, SocialLink } from '../types'
 
 export const channel = {
   id: 'UCsnUwRoQuUwefJypDf0TXGA',
-  handle: 'LatentDiffusion',
   displayName: 'Latent Diffusion',
 }
 
@@ -25,7 +24,7 @@ export const urls = {
 export const assetDimensions = {
   logo: { width: 176, height: 176 },
   heroBackground: { width: 1024, height: 738 },
-  heroPortrait: { width: 960, height: 720 },
+  heroPortrait: { width: 400, height: 300 },
   about: { width: 573, height: 737 },
   episodeThumb: { width: 1280, height: 720 },
 } as const
@@ -35,19 +34,13 @@ export const assets = {
   logoWebp: '/images/channel-avatar-88.webp',
   heroBackground: '/images/hero-forest.png',
   heroBackgroundWebp: '/images/hero-forest.webp',
-  heroPortrait: '/images/hero-portrait.jpg',
-  heroPortraitWebp: '/images/hero-portrait.webp',
-  heroPortraitWebp480: '/images/hero-portrait-480.webp',
-  heroPortraitWebp640: '/images/hero-portrait-640.webp',
+  heroPortrait: '/images/hero-portrait.gif',
+  heroPortraitPoster: '/images/hero-portrait-poster.jpg',
   about: '/images/crafting-table.png',
   aboutWebp: '/images/crafting-table.webp',
   episodeThumbWebp: (number: number) => `/images/episode-${number}-thumb.webp`,
-  episodeThumbWebp480: (number: number) =>
-    `/images/episode-${number}-thumb-480.webp`,
   og: '/images/og.webp',
   episodeThumb: (number: number) => `/images/episode-${number}-thumb.jpg`,
-  favicon32: '/favicon-32.png',
-  favicon192: '/favicon-192.png',
 }
 
 export const youtube = {
@@ -61,8 +54,6 @@ export const site = {
   tagline: 'Minecraft reimagined through 1979 film grain',
   description:
     'AI-generated episodes that turn blocky worlds into gritty, photorealistic 70s cinema.',
-  year: 1979,
-  author: channel.displayName,
   channelUrl: urls.youtubeChannel,
   patreonUrl: urls.patreon,
   logo: assets.logo,
@@ -108,22 +99,5 @@ export const socialLinks: SocialLink[] = [
 export const seo = {
   title: site.name,
   description: `${site.description} Watch episodes from ${channel.displayName} on YouTube.`,
-  keywords: [
-    'Craft 1979',
-    'Minecraft',
-    'AI video',
-    'Latent Diffusion',
-    '1979',
-    'cinematic Minecraft',
-    'AI generated',
-    'YouTube series',
-  ],
-  author: channel.displayName,
-  locale: 'en_US',
-  themeColor: '#1a2e1a',
   ogImage: assets.og,
-  ogImageAlt:
-    'Craft 1979 promotional frame showing a rugged survivor in a vintage 1970s film style',
-  twitterCard: 'summary_large_image' as const,
-  robots: 'index, follow, max-image-preview:large',
 }

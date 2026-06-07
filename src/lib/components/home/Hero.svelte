@@ -73,24 +73,15 @@
         <CraftGrid size="md" class="md:hidden" />
         <CraftGrid size="lg" class="hidden md:block" />
       </div>
-      <picture>
-        <source
-          type="image/webp"
-          srcset="{assetPath(assets.heroPortraitWebp480)} 480w, {assetPath(
-            assets.heroPortraitWebp640
-          )} 640w, {assetPath(assets.heroPortraitWebp)} 960w"
-          sizes="(max-width: 768px) 100vw, 448px"
-        />
-        <img
-          src={assetPath(site.heroPortrait)}
-          alt="A frame from Craft 1979 Episode I"
-          width={assetDimensions.heroPortrait.width}
-          height={assetDimensions.heroPortrait.height}
-          fetchpriority="high"
-          decoding="async"
-          class="relative z-10 w-full vintage-filter shadow-block border-2 border-forest-700"
-        />
-      </picture>
+      <img
+        src={assetPath(site.heroPortrait)}
+        alt="Craft 1979 Episode I clip from 4:45 to 4:53"
+        width={assetDimensions.heroPortrait.width}
+        height={assetDimensions.heroPortrait.height}
+        fetchpriority="high"
+        decoding="async"
+        class="relative z-10 w-full vintage-filter shadow-block border-2 border-forest-700"
+      />
     </div>
   </div>
 </section>

@@ -62,7 +62,8 @@ Change channel links, image paths, RSS settings, and episode copy in `src/lib/co
 ## Images
 
 - `public/images/channel-avatar.jpg` - Latent Diffusion YouTube profile (header logo and favicon)
-- `public/images/hero-portrait.jpg` - Episode I frame at 4:51 (`zX-e9LRR_ko`)
+- `public/images/hero-portrait.gif` - Episode I clip from 4:45 to 4:53 (`zX-e9LRR_ko`)
+- `public/images/hero-portrait-poster.jpg` - first frame poster for preload
 
 ## CI
 

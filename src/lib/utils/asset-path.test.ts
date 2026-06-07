@@ -3,8 +3,8 @@ import { assetPath, siteRoot } from './asset-path'
 
 describe('assetPath', () => {
   it('returns root-relative paths unchanged at the default base', () => {
-    expect(assetPath('/images/hero-portrait.jpg')).toBe(
-      '/images/hero-portrait.jpg'
+    expect(assetPath('/images/hero-portrait.gif')).toBe(
+      '/images/hero-portrait.gif'
     )
   })
 
