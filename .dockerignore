@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+.git
+.github
+.env
+.env.*
+!.env.example
+**/__screenshots__
+.vitest-attachments
+*.log
+.vscode
+.idea
+.DS_Store
+showcase
