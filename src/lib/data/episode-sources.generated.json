@@ -1,6 +1,16 @@
 {
-  "syncedAt": "2026-06-14T18:52:29.356Z",
+  "syncedAt": "2026-06-15T22:30:56.446Z",
   "sources": [
+    {
+      "youtubeId": "8Pds0NI_iBw",
+      "publishedAt": "2026-06-15",
+      "description": "CRAFT (1979): The Point | Episode 3 Trailer"
+    },
+    {
+      "youtubeId": "xtwql52UJuU",
+      "publishedAt": "2026-06-15",
+      "description": "What will he find...?"
+    },
     {
       "youtubeId": "Ua2D-PM97xc",
       "publishedAt": "2026-06-06",
@@ -13,6 +23,8 @@
     }
   ],
   "thumbnails": {
+    "8Pds0NI_iBw": "/images/episode-4-thumb.jpg",
+    "xtwql52UJuU": "/images/episode-3-thumb.jpg",
     "Ua2D-PM97xc": "/images/episode-2-thumb.jpg",
     "zX-e9LRR_ko": "/images/episode-1-thumb.jpg"
   }
