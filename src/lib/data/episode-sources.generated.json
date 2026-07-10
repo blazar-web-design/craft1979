@@ -1,6 +1,11 @@
 {
-  "syncedAt": "2026-07-09T16:30:56.085Z",
+  "syncedAt": "2026-07-10T16:28:25.427Z",
   "sources": [
+    {
+      "youtubeId": "TbOltAdZpWA",
+      "publishedAt": "2026-07-09",
+      "description": "The map led across the water… and finally, to something..."
+    },
     {
       "youtubeId": "WmLU7UBP_lk",
       "publishedAt": "2026-07-09",
@@ -53,6 +58,7 @@
     }
   ],
   "thumbnails": {
+    "TbOltAdZpWA": "/images/episode-11-thumb.jpg",
     "WmLU7UBP_lk": "/images/episode-10-thumb.jpg",
     "bt3-xbhLndw": "/images/episode-9-thumb.jpg",
     "rmWX9hp8DMs": "/images/episode-8-thumb.jpg",
