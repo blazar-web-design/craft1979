@@ -1,6 +1,16 @@
 {
-  "syncedAt": "2026-07-12T15:04:13.341Z",
+  "syncedAt": "2026-07-13T16:38:56.442Z",
   "sources": [
+    {
+      "youtubeId": "Kp_h6TXvxj4",
+      "publishedAt": "2026-07-13",
+      "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
+    },
+    {
+      "youtubeId": "ablDQOokX1I",
+      "publishedAt": "2026-07-12",
+      "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
+    },
     {
       "youtubeId": "TbOltAdZpWA",
       "publishedAt": "2026-07-11",
@@ -58,6 +68,8 @@
     }
   ],
   "thumbnails": {
+    "Kp_h6TXvxj4": "/images/episode-13-thumb.jpg",
+    "ablDQOokX1I": "/images/episode-12-thumb.jpg",
     "TbOltAdZpWA": "/images/episode-11-thumb.jpg",
     "WmLU7UBP_lk": "/images/episode-10-thumb.jpg",
     "bt3-xbhLndw": "/images/episode-9-thumb.jpg",
