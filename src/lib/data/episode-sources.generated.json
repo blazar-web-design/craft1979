@@ -1,6 +1,11 @@
 {
-  "syncedAt": "2026-07-18T15:01:39.943Z",
+  "syncedAt": "2026-07-19T15:03:33.879Z",
   "sources": [
+    {
+      "youtubeId": "_WriXv5Ad8w",
+      "publishedAt": "2026-07-18",
+      "description": "full episode 5 is out! thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
+    },
     {
       "youtubeId": "Kp_h6TXvxj4",
       "publishedAt": "2026-07-13",
@@ -68,6 +73,7 @@
     }
   ],
   "thumbnails": {
+    "_WriXv5Ad8w": "/images/episode-14-thumb.jpg",
     "Kp_h6TXvxj4": "/images/episode-13-thumb.jpg",
     "ablDQOokX1I": "/images/episode-12-thumb.jpg",
     "TbOltAdZpWA": "/images/episode-11-thumb.jpg",
