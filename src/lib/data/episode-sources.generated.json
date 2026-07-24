@@ -1,6 +1,11 @@
 {
-  "syncedAt": "2026-07-23T15:57:38.337Z",
+  "syncedAt": "2026-07-24T15:35:02.804Z",
   "sources": [
+    {
+      "youtubeId": "9EZKSOtIy_k",
+      "publishedAt": "2026-07-24",
+      "description": "Head to https://latentdiffusion.tv for more!!"
+    },
     {
       "youtubeId": "_WriXv5Ad8w",
       "publishedAt": "2026-07-18",
@@ -73,6 +78,7 @@
     }
   ],
   "thumbnails": {
+    "9EZKSOtIy_k": "/images/episode-15-thumb.jpg",
     "_WriXv5Ad8w": "/images/episode-14-thumb.jpg",
     "Kp_h6TXvxj4": "/images/episode-13-thumb.jpg",
     "ablDQOokX1I": "/images/episode-12-thumb.jpg",
