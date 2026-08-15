@@ -1,6 +1,11 @@
 {
-  "syncedAt": "2026-08-14T14:58:22.987Z",
+  "syncedAt": "2026-08-15T14:29:45.738Z",
   "sources": [
+    {
+      "youtubeId": "-ANTA352tis",
+      "publishedAt": "2026-08-14",
+      "description": "Head to https://latentdiffusion.tv for more!!"
+    },
     {
       "youtubeId": "HTBYnhCHH7M",
       "publishedAt": "2026-07-25",
@@ -70,28 +75,23 @@
       "youtubeId": "xtwql52UJuU",
       "publishedAt": "2026-06-15",
       "description": "What will he find...?"
-    },
-    {
-      "youtubeId": "Ua2D-PM97xc",
-      "publishedAt": "2026-06-06",
-      "description": "The forest deepens. Steve faces what the blocks were always hiding beneath the leaves."
     }
   ],
   "thumbnails": {
-    "HTBYnhCHH7M": "/images/episode-15-thumb.jpg",
-    "2VizrC57_AY": "/images/episode-14-thumb.jpg",
-    "_WriXv5Ad8w": "/images/episode-13-thumb.jpg",
-    "Kp_h6TXvxj4": "/images/episode-12-thumb.jpg",
-    "ablDQOokX1I": "/images/episode-11-thumb.jpg",
-    "TbOltAdZpWA": "/images/episode-10-thumb.jpg",
-    "WmLU7UBP_lk": "/images/episode-9-thumb.jpg",
-    "bt3-xbhLndw": "/images/episode-8-thumb.jpg",
-    "rmWX9hp8DMs": "/images/episode-7-thumb.jpg",
-    "aClTN8yn2Cw": "/images/episode-6-thumb.jpg",
-    "TXDH7-hPe1c": "/images/episode-5-thumb.jpg",
-    "7MVrjJxNZkY": "/images/episode-4-thumb.jpg",
-    "8Pds0NI_iBw": "/images/episode-3-thumb.jpg",
-    "xtwql52UJuU": "/images/episode-2-thumb.jpg",
-    "Ua2D-PM97xc": "/images/episode-1-thumb.jpg"
+    "-ANTA352tis": "/images/episode-15-thumb.jpg",
+    "HTBYnhCHH7M": "/images/episode-14-thumb.jpg",
+    "2VizrC57_AY": "/images/episode-13-thumb.jpg",
+    "_WriXv5Ad8w": "/images/episode-12-thumb.jpg",
+    "Kp_h6TXvxj4": "/images/episode-11-thumb.jpg",
+    "ablDQOokX1I": "/images/episode-10-thumb.jpg",
+    "TbOltAdZpWA": "/images/episode-9-thumb.jpg",
+    "WmLU7UBP_lk": "/images/episode-8-thumb.jpg",
+    "bt3-xbhLndw": "/images/episode-7-thumb.jpg",
+    "rmWX9hp8DMs": "/images/episode-6-thumb.jpg",
+    "aClTN8yn2Cw": "/images/episode-5-thumb.jpg",
+    "TXDH7-hPe1c": "/images/episode-4-thumb.jpg",
+    "7MVrjJxNZkY": "/images/episode-3-thumb.jpg",
+    "8Pds0NI_iBw": "/images/episode-2-thumb.jpg",
+    "xtwql52UJuU": "/images/episode-1-thumb.jpg"
   }
 }
