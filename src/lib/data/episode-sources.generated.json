@@ -1,9 +1,14 @@
 {
-  "syncedAt": "2026-08-15T14:29:45.738Z",
+  "syncedAt": "2026-08-16T14:29:31.286Z",
   "sources": [
     {
+      "youtubeId": "bOUHhf3Qrfo",
+      "publishedAt": "2026-08-15",
+      "description": "full episode 7 is out! thanks for the support everyone! Check out more on https://latentdiffusion.tv - If you'd like you can support and get Early access, BT..."
+    },
+    {
       "youtubeId": "-ANTA352tis",
-      "publishedAt": "2026-08-14",
+      "publishedAt": "2026-08-15",
       "description": "Head to https://latentdiffusion.tv for more!!"
     },
     {
@@ -70,28 +75,23 @@
       "youtubeId": "8Pds0NI_iBw",
       "publishedAt": "2026-06-15",
       "description": "CRAFT (1979): The Point | Episode 3 Trailer"
-    },
-    {
-      "youtubeId": "xtwql52UJuU",
-      "publishedAt": "2026-06-15",
-      "description": "What will he find...?"
     }
   ],
   "thumbnails": {
-    "-ANTA352tis": "/images/episode-15-thumb.jpg",
-    "HTBYnhCHH7M": "/images/episode-14-thumb.jpg",
-    "2VizrC57_AY": "/images/episode-13-thumb.jpg",
-    "_WriXv5Ad8w": "/images/episode-12-thumb.jpg",
-    "Kp_h6TXvxj4": "/images/episode-11-thumb.jpg",
-    "ablDQOokX1I": "/images/episode-10-thumb.jpg",
-    "TbOltAdZpWA": "/images/episode-9-thumb.jpg",
-    "WmLU7UBP_lk": "/images/episode-8-thumb.jpg",
-    "bt3-xbhLndw": "/images/episode-7-thumb.jpg",
-    "rmWX9hp8DMs": "/images/episode-6-thumb.jpg",
-    "aClTN8yn2Cw": "/images/episode-5-thumb.jpg",
-    "TXDH7-hPe1c": "/images/episode-4-thumb.jpg",
-    "7MVrjJxNZkY": "/images/episode-3-thumb.jpg",
-    "8Pds0NI_iBw": "/images/episode-2-thumb.jpg",
-    "xtwql52UJuU": "/images/episode-1-thumb.jpg"
+    "bOUHhf3Qrfo": "/images/episode-15-thumb.jpg",
+    "-ANTA352tis": "/images/episode-14-thumb.jpg",
+    "HTBYnhCHH7M": "/images/episode-13-thumb.jpg",
+    "2VizrC57_AY": "/images/episode-12-thumb.jpg",
+    "_WriXv5Ad8w": "/images/episode-11-thumb.jpg",
+    "Kp_h6TXvxj4": "/images/episode-10-thumb.jpg",
+    "ablDQOokX1I": "/images/episode-9-thumb.jpg",
+    "TbOltAdZpWA": "/images/episode-8-thumb.jpg",
+    "WmLU7UBP_lk": "/images/episode-7-thumb.jpg",
+    "bt3-xbhLndw": "/images/episode-6-thumb.jpg",
+    "rmWX9hp8DMs": "/images/episode-5-thumb.jpg",
+    "aClTN8yn2Cw": "/images/episode-4-thumb.jpg",
+    "TXDH7-hPe1c": "/images/episode-3-thumb.jpg",
+    "7MVrjJxNZkY": "/images/episode-2-thumb.jpg",
+    "8Pds0NI_iBw": "/images/episode-1-thumb.jpg"
   }
 }
