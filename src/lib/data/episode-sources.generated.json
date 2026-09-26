@@ -1,10 +1,15 @@
 {
-  "syncedAt": "2026-09-25T18:26:35.595Z",
+  "syncedAt": "2026-09-26T17:42:39.881Z",
   "sources": [
     {
       "youtubeId": "rEjtwPCZinU",
-      "publishedAt": "2026-09-23",
+      "publishedAt": "2026-09-26",
       "description": "Head to https://latentdiffusion.tv/library for more!! The Librarian has transcribed more..."
+    },
+    {
+      "youtubeId": "S-SY22BSD8Y",
+      "publishedAt": "2026-09-26",
+      "description": "full episode 9 is out! thanks for the support everyone! Check out more on https://latentdiffusion.tv/library - the elder continues his work... If you'd like ..."
     },
     {
       "youtubeId": "3_jTn0LUO3M",
@@ -70,28 +75,23 @@
       "youtubeId": "bt3-xbhLndw",
       "publishedAt": "2026-07-03",
       "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
-    },
-    {
-      "youtubeId": "rmWX9hp8DMs",
-      "publishedAt": "2026-06-29",
-      "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
     }
   ],
   "thumbnails": {
     "rEjtwPCZinU": "/images/episode-15-thumb.jpg",
-    "3_jTn0LUO3M": "/images/episode-14-thumb.jpg",
-    "tG-mpOxyYaM": "/images/episode-13-thumb.jpg",
-    "ydMoxeikPsg": "/images/episode-12-thumb.jpg",
-    "bOUHhf3Qrfo": "/images/episode-11-thumb.jpg",
-    "-ANTA352tis": "/images/episode-10-thumb.jpg",
-    "HTBYnhCHH7M": "/images/episode-9-thumb.jpg",
-    "2VizrC57_AY": "/images/episode-8-thumb.jpg",
-    "_WriXv5Ad8w": "/images/episode-7-thumb.jpg",
-    "Kp_h6TXvxj4": "/images/episode-6-thumb.jpg",
-    "ablDQOokX1I": "/images/episode-5-thumb.jpg",
-    "TbOltAdZpWA": "/images/episode-4-thumb.jpg",
-    "WmLU7UBP_lk": "/images/episode-3-thumb.jpg",
-    "bt3-xbhLndw": "/images/episode-2-thumb.jpg",
-    "rmWX9hp8DMs": "/images/episode-1-thumb.jpg"
+    "S-SY22BSD8Y": "/images/episode-14-thumb.jpg",
+    "3_jTn0LUO3M": "/images/episode-13-thumb.jpg",
+    "tG-mpOxyYaM": "/images/episode-12-thumb.jpg",
+    "ydMoxeikPsg": "/images/episode-11-thumb.jpg",
+    "bOUHhf3Qrfo": "/images/episode-10-thumb.jpg",
+    "-ANTA352tis": "/images/episode-9-thumb.jpg",
+    "HTBYnhCHH7M": "/images/episode-8-thumb.jpg",
+    "2VizrC57_AY": "/images/episode-7-thumb.jpg",
+    "_WriXv5Ad8w": "/images/episode-6-thumb.jpg",
+    "Kp_h6TXvxj4": "/images/episode-5-thumb.jpg",
+    "ablDQOokX1I": "/images/episode-4-thumb.jpg",
+    "TbOltAdZpWA": "/images/episode-3-thumb.jpg",
+    "WmLU7UBP_lk": "/images/episode-2-thumb.jpg",
+    "bt3-xbhLndw": "/images/episode-1-thumb.jpg"
   }
 }
