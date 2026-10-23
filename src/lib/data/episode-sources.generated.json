@@ -1,6 +1,16 @@
 {
-  "syncedAt": "2026-10-22T18:26:41.283Z",
+  "syncedAt": "2026-10-23T18:13:08.574Z",
   "sources": [
+    {
+      "youtubeId": "bd1EXlpmGq8",
+      "publishedAt": "2026-10-23",
+      "description": "CRAFT (1979) - The SEASON FINALE IS COMING OUT SATURDAY - Be there, 10am PST! The Harrowing will premiere, the culmination of our efforts. super excited to s..."
+    },
+    {
+      "youtubeId": "tqWFG8GfcRg",
+      "publishedAt": "2026-10-23",
+      "description": "THANK YOU FOR WATCHING SEASON 1!! Support for a season 2 on https://latentdiffusion.tv"
+    },
     {
       "youtubeId": "rEjtwPCZinU",
       "publishedAt": "2026-09-26",
@@ -65,33 +75,23 @@
       "youtubeId": "TbOltAdZpWA",
       "publishedAt": "2026-07-11",
       "description": "The map led across the water… and finally, to something..."
-    },
-    {
-      "youtubeId": "WmLU7UBP_lk",
-      "publishedAt": "2026-07-09",
-      "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
-    },
-    {
-      "youtubeId": "bt3-xbhLndw",
-      "publishedAt": "2026-07-03",
-      "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
     }
   ],
   "thumbnails": {
-    "rEjtwPCZinU": "/images/episode-15-thumb.jpg",
-    "S-SY22BSD8Y": "/images/episode-14-thumb.jpg",
-    "3_jTn0LUO3M": "/images/episode-13-thumb.jpg",
-    "tG-mpOxyYaM": "/images/episode-12-thumb.jpg",
-    "ydMoxeikPsg": "/images/episode-11-thumb.jpg",
-    "bOUHhf3Qrfo": "/images/episode-10-thumb.jpg",
-    "-ANTA352tis": "/images/episode-9-thumb.jpg",
-    "HTBYnhCHH7M": "/images/episode-8-thumb.jpg",
-    "2VizrC57_AY": "/images/episode-7-thumb.jpg",
-    "_WriXv5Ad8w": "/images/episode-6-thumb.jpg",
-    "Kp_h6TXvxj4": "/images/episode-5-thumb.jpg",
-    "ablDQOokX1I": "/images/episode-4-thumb.jpg",
-    "TbOltAdZpWA": "/images/episode-3-thumb.jpg",
-    "WmLU7UBP_lk": "/images/episode-2-thumb.jpg",
-    "bt3-xbhLndw": "/images/episode-1-thumb.jpg"
+    "bd1EXlpmGq8": "/images/episode-15-thumb.jpg",
+    "tqWFG8GfcRg": "/images/episode-14-thumb.jpg",
+    "rEjtwPCZinU": "/images/episode-13-thumb.jpg",
+    "S-SY22BSD8Y": "/images/episode-12-thumb.jpg",
+    "3_jTn0LUO3M": "/images/episode-11-thumb.jpg",
+    "tG-mpOxyYaM": "/images/episode-10-thumb.jpg",
+    "ydMoxeikPsg": "/images/episode-9-thumb.jpg",
+    "bOUHhf3Qrfo": "/images/episode-8-thumb.jpg",
+    "-ANTA352tis": "/images/episode-7-thumb.jpg",
+    "HTBYnhCHH7M": "/images/episode-6-thumb.jpg",
+    "2VizrC57_AY": "/images/episode-5-thumb.jpg",
+    "_WriXv5Ad8w": "/images/episode-4-thumb.jpg",
+    "Kp_h6TXvxj4": "/images/episode-3-thumb.jpg",
+    "ablDQOokX1I": "/images/episode-2-thumb.jpg",
+    "TbOltAdZpWA": "/images/episode-1-thumb.jpg"
   }
 }
