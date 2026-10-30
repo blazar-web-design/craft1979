@@ -1,6 +1,11 @@
 {
-  "syncedAt": "2026-10-29T19:29:19.198Z",
+  "syncedAt": "2026-10-30T19:06:13.964Z",
   "sources": [
+    {
+      "youtubeId": "RlhGKn2739E",
+      "publishedAt": "2026-10-30",
+      "description": "After ten episodes, an entire first season, and countless hours of work, here's a look behind the scenes of CRAFT (1979)!"
+    },
     {
       "youtubeId": "AWHyA2hiauQ",
       "publishedAt": "2026-10-24",
@@ -70,28 +75,23 @@
       "youtubeId": "Kp_h6TXvxj4",
       "publishedAt": "2026-07-13",
       "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
-    },
-    {
-      "youtubeId": "ablDQOokX1I",
-      "publishedAt": "2026-07-12",
-      "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
     }
   ],
   "thumbnails": {
-    "AWHyA2hiauQ": "/images/episode-15-thumb.jpg",
-    "tqWFG8GfcRg": "/images/episode-14-thumb.jpg",
-    "bd1EXlpmGq8": "/images/episode-13-thumb.jpg",
-    "rEjtwPCZinU": "/images/episode-12-thumb.jpg",
-    "S-SY22BSD8Y": "/images/episode-11-thumb.jpg",
-    "3_jTn0LUO3M": "/images/episode-10-thumb.jpg",
-    "tG-mpOxyYaM": "/images/episode-9-thumb.jpg",
-    "ydMoxeikPsg": "/images/episode-8-thumb.jpg",
-    "bOUHhf3Qrfo": "/images/episode-7-thumb.jpg",
-    "-ANTA352tis": "/images/episode-6-thumb.jpg",
-    "HTBYnhCHH7M": "/images/episode-5-thumb.jpg",
-    "2VizrC57_AY": "/images/episode-4-thumb.jpg",
-    "_WriXv5Ad8w": "/images/episode-3-thumb.jpg",
-    "Kp_h6TXvxj4": "/images/episode-2-thumb.jpg",
-    "ablDQOokX1I": "/images/episode-1-thumb.jpg"
+    "RlhGKn2739E": "/images/episode-15-thumb.jpg",
+    "AWHyA2hiauQ": "/images/episode-14-thumb.jpg",
+    "tqWFG8GfcRg": "/images/episode-13-thumb.jpg",
+    "bd1EXlpmGq8": "/images/episode-12-thumb.jpg",
+    "rEjtwPCZinU": "/images/episode-11-thumb.jpg",
+    "S-SY22BSD8Y": "/images/episode-10-thumb.jpg",
+    "3_jTn0LUO3M": "/images/episode-9-thumb.jpg",
+    "tG-mpOxyYaM": "/images/episode-8-thumb.jpg",
+    "ydMoxeikPsg": "/images/episode-7-thumb.jpg",
+    "bOUHhf3Qrfo": "/images/episode-6-thumb.jpg",
+    "-ANTA352tis": "/images/episode-5-thumb.jpg",
+    "HTBYnhCHH7M": "/images/episode-4-thumb.jpg",
+    "2VizrC57_AY": "/images/episode-3-thumb.jpg",
+    "_WriXv5Ad8w": "/images/episode-2-thumb.jpg",
+    "Kp_h6TXvxj4": "/images/episode-1-thumb.jpg"
   }
 }
