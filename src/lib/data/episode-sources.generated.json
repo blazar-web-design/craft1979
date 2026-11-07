@@ -1,6 +1,11 @@
 {
-  "syncedAt": "2026-11-06T20:19:35.010Z",
+  "syncedAt": "2026-11-07T18:37:16.311Z",
   "sources": [
+    {
+      "youtubeId": "JfC5fCe1uwc",
+      "publishedAt": "2026-11-07",
+      "description": "https://latentdiffusion.tv/season-2"
+    },
     {
       "youtubeId": "RlhGKn2739E",
       "publishedAt": "2026-10-31",
@@ -70,28 +75,23 @@
       "youtubeId": "_WriXv5Ad8w",
       "publishedAt": "2026-07-18",
       "description": "full episode 5 is out! thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
-    },
-    {
-      "youtubeId": "Kp_h6TXvxj4",
-      "publishedAt": "2026-07-13",
-      "description": "thanks for the support everyone! If you'd like you can support and get Early access, BTS, and other things on my patreon also in my bio!"
     }
   ],
   "thumbnails": {
-    "RlhGKn2739E": "/images/episode-15-thumb.jpg",
-    "AWHyA2hiauQ": "/images/episode-14-thumb.jpg",
-    "tqWFG8GfcRg": "/images/episode-13-thumb.jpg",
-    "bd1EXlpmGq8": "/images/episode-12-thumb.jpg",
-    "rEjtwPCZinU": "/images/episode-11-thumb.jpg",
-    "S-SY22BSD8Y": "/images/episode-10-thumb.jpg",
-    "3_jTn0LUO3M": "/images/episode-9-thumb.jpg",
-    "tG-mpOxyYaM": "/images/episode-8-thumb.jpg",
-    "ydMoxeikPsg": "/images/episode-7-thumb.jpg",
-    "bOUHhf3Qrfo": "/images/episode-6-thumb.jpg",
-    "-ANTA352tis": "/images/episode-5-thumb.jpg",
-    "HTBYnhCHH7M": "/images/episode-4-thumb.jpg",
-    "2VizrC57_AY": "/images/episode-3-thumb.jpg",
-    "_WriXv5Ad8w": "/images/episode-2-thumb.jpg",
-    "Kp_h6TXvxj4": "/images/episode-1-thumb.jpg"
+    "JfC5fCe1uwc": "/images/episode-15-thumb.jpg",
+    "RlhGKn2739E": "/images/episode-14-thumb.jpg",
+    "AWHyA2hiauQ": "/images/episode-13-thumb.jpg",
+    "tqWFG8GfcRg": "/images/episode-12-thumb.jpg",
+    "bd1EXlpmGq8": "/images/episode-11-thumb.jpg",
+    "rEjtwPCZinU": "/images/episode-10-thumb.jpg",
+    "S-SY22BSD8Y": "/images/episode-9-thumb.jpg",
+    "3_jTn0LUO3M": "/images/episode-8-thumb.jpg",
+    "tG-mpOxyYaM": "/images/episode-7-thumb.jpg",
+    "ydMoxeikPsg": "/images/episode-6-thumb.jpg",
+    "bOUHhf3Qrfo": "/images/episode-5-thumb.jpg",
+    "-ANTA352tis": "/images/episode-4-thumb.jpg",
+    "HTBYnhCHH7M": "/images/episode-3-thumb.jpg",
+    "2VizrC57_AY": "/images/episode-2-thumb.jpg",
+    "_WriXv5Ad8w": "/images/episode-1-thumb.jpg"
   }
 }
